@@ -60,122 +60,52 @@ All within an ethical, authorized, and user-friendly system.
 ---
 
 ## 📁 Project Structure
-
-────────────────────────────────────────────────────────────────────────────────
-
-├── 📁 DIAGRAMS/
-│   └── 🖼️ UseCase diagram.png
-├── 📁 Proj Docs/
-│   ├── 📁 BlackBooks/
-│   │   ├── 📘 COMBINE BB.docx
-│   │   ├── 📘 Combine First 5.docx
-│   │   ├── 📘 Monteck BB.docx
-│   │   ├── 📘 Monteck first5 BB.docx
-│   │   ├── 📘 Pranay BB.docx
-│   │   └── 📘 Pranay first5 BB.docx
-│   ├── 🖼️ GANTT.png
-│   ├── 🖼️ MVC architecture.png
-│   ├── 🖼️ activity diagram.png
-│   ├── 🖼️ seqquence dia.png
-│   ├── 🖼️ state diagram.png
-│   └── 📄 test cases.xlsx
-├── 📁 core/
-│   ├── 🐍 __init__.py
-│   ├── 🐍 compliance_engine.py
-│   ├── 🐍 engine.py
-│   ├── 🐍 intelligence_engine.py
-│   ├── 🐍 posture_engine.py
-│   ├── 🐍 recommendation_engine.py
-│   ├── 🐍 risk_engine.py
-│   └── 🐍 scanner.py
-├── 📁 data/
-│   ├── 📁 history/
-│   │   └── ⚙️ scan_history.json
-│   ├── 📁 results/
-│   │   ├── ⚙️ instagram.com_dns_tech.json
-│   │   ├── ⚙️ instagram.com_risk_report.json
-│   │   ├── ⚙️ instagram.com_vulnerabilities.json
-│   │   ├── ⚙️ www.rkttechtrove.com_dns_tech.json
-│   │   ├── ⚙️ www.rkttechtrove.com_risk_report.json
-│   │   ├── ⚙️ www.rkttechtrove.com_vulnerabilities.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_directories.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_dns_tech.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_ports.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_risk_report.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_subdomains.json
-│   │   ├── ⚙️ www.sonawanepranay05.wixstudio.io_vulnerabilities.json
-│   │   ├── ⚙️ www.w3schools.com_directories.json
-│   │   ├── ⚙️ www.w3schools.com_dns_tech.json
-│   │   ├── ⚙️ www.w3schools.com_ports.json
-│   │   ├── ⚙️ www.w3schools.com_risk_report.json
-│   │   ├── 📕 www.w3schools.com_security_report.pdf
-│   │   ├── ⚙️ www.w3schools.com_subdomains.json
-│   │   └── ⚙️ www.w3schools.com_vulnerabilities.json
-│   ├── 📁 users/
-│   │   ├── 📁 174fb097-9228-49fa-898c-38ca8e855ec8/
-│   │   │   ├── 📁 reports/
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 7f33eab1-a76f-4166-9a68-077bab2f1b67/
-│   │   │   ├── 📁 reports/
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 8942d9ec-c82d-4f16-b713-4556a726de53/
-│   │   │   ├── 📁 reports/
-│   │   │   │   └── 📕 instagram.com_security_report.pdf
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 bba4fc10-0eda-4033-800e-32ac39322962/
-│   │   │   ├── 📁 reports/
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 d1d61cdc-87fe-4f5b-925e-f70fd922411e/
-│   │   │   ├── 📁 reports/
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 e104adb5-ee03-4b10-837d-839b268bc217/
-│   │   │   ├── 📁 reports/
-│   │   │   │   ├── 📕 www.rkttechtrove.com_security_report.pdf
-│   │   │   │   ├── 📕 www.sonawanepranay05.wixstudio.io_security_report.pdf
-│   │   │   │   └── 📕 www.w3schools.com_security_report.pdf
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 e2bcb77c-b0d9-4534-a529-bdd3d72a3bd7/
-│   │   │   ├── 📁 reports/
-│   │   │   │   ├── 📕 instagram.com_security_report.pdf
-│   │   │   │   ├── 📕 www.rkttechtrove.com_security_report.pdf
-│   │   │   │   ├── 📕 www.sonawanepranay05.wixstudio.io_security_report.pdf
-│   │   │   │   └── 📕 www.w3schools.com_security_report.pdf
-│   │   │   └── ⚙️ scan_history.json
-│   │   ├── 📁 u001/
-│   │   │   ├── 📁 reports/
-│   │   │   └── ⚙️ scan_history.json
-│   │   └── ⚙️ users.json
-│   └── 📁 wordlists/
-│       └── 📄 common_dirs.txt
-├── 📁 modules/
-│   ├── 🐍 __init__.py
-│   ├── 🐍 dir_bruteforce.py
-│   ├── 🐍 dns_fingerprint.py
-│   ├── 🐍 port_scan.py
-│   ├── 🐍 subdomain_enum.py
-│   └── 🐍 vuln_scan.py
-├── 📁 reports/
-│   └── 🐍 report_generator.py
-├── 📁 static/
-│   ├── 🖼️ BG2.gif
-│   ├── 🎨 auth.css
-│   ├── 🖼️ bg.gif
-│   ├── 🖼️ bg01.gif
-│   └── 🎨 style.css
-├── 📁 templates/
-│   ├── 🌐 index.html
-│   ├── 🌐 login.html
-│   ├── 🌐 profile.html
-│   ├── 🌐 result.html
-│   └── 🌐 signup.html
-├── 📁 utils/
-│   ├── 🐍 __init__.py
-│   ├── 🐍 helpers.py
-│   └── 🐍 loggers.py
-├── 📝 README.md
-├── 🖼️ TEST1.png
-├── 🐍 app.py
-└── 📄 requirements.txt
-
-────────────────────────────────────────────────────────────────────────────────
-
+```text
+RiskRecon-Suite/
+│
+├── app.py                     # Main Flask application entry point
+│
+├── core/                      # Core analysis & intelligence engines
+│   ├── __init__.py
+│   ├── risk_engine.py         # Risk score & severity calculation
+│   ├── compliance_engine.py   # OWASP compliance evaluation
+│   ├── recommendation_engine.py # Remediation recommendations
+│   └── posture_engine.py      # Overall security posture scoring
+│
+├── modules/                   # Reconnaissance & scanning modules
+│   ├── __init__.py
+│   ├── dns_fingerprint.py     # DNS & technology fingerprinting
+│   ├── subdomain_enum.py      # Subdomain enumeration
+│   ├── port_scan.py           # Port scanning (Nmap integration)
+│   ├── dir_bruteforce.py      # Directory brute-forcing
+│   └── vuln_scan.py           # Vulnerability detection
+│
+├── reports/                   # Report generation
+│   ├── __init__.py
+│   └── report_generator.py    # PDF security report generation
+│
+├── templates/                 # HTML templates (Flask views)
+│   ├── login.html             # User login page
+│   ├── signup.html            # User registration page
+│   ├── index.html             # Scan console (main workspace)
+│   ├── profile.html           # User profile & scan history
+│   └── result.html            # Scan results & analysis page
+│
+├── static/                    # Static assets
+│   ├── css/
+│   │   └── style.css          # Global cyber-themed styles
+│   ├── images/
+│   │   └── bg.gif             # UI background assets
+│   └── js/
+│       └── loader.js          # Client-side scripts
+│
+├── data/                      # Runtime data (ignored in Git)
+│   ├── users/
+│   │   └── .gitkeep
+│   └── results/
+│       └── .gitkeep
+│
+├── requirements.txt           # Python dependencies
+├── .gitignore                 # Git ignore rules
+├── LICENSE                    # Project license
+└── README.md                  # Project documentation
