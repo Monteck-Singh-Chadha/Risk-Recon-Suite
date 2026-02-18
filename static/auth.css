@@ -1,0 +1,98 @@
+/* Global terminal feel */
+body {
+    margin: 0;
+    height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("/static/BG2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Courier New", monospace;
+    color: #00ff66;
+}
+
+
+
+/* Terminal panel */
+.terminal {
+    width: 420px;
+    padding: 30px;
+    border: 2px solid #00ff66;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.4);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Terminal header */
+.terminal-header {
+    color: #00ff66;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.terminal-header span {
+    color: #6aff9f;
+}
+
+/* Input lines */
+.terminal-line {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #00ff66;
+    color: #00ff66;
+    padding: 5px;
+    outline: none;
+    font-family: inherit;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #00ff66;
+    color: #00ff66;
+    padding: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00ff66;
+    color: #000;
+}
+
+/* Footer links */
+.terminal-footer {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.terminal-footer a {
+    color: #6aff9f;
+    text-decoration: none;
+}
+
+.terminal-footer a:hover {
+    text-decoration: underline;
+}
